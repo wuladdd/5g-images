@@ -44,7 +44,7 @@ RUN apt-get update && \
         wget && \
     apt-get clean
 
-RUN	mkdir -p /opt/open5gs && cd /tmp && git clone https://github.com/open5gs/open5gs && \
+RUN	mkdir -p /opt/open5gs && cd /tmp && git clone https://github.com/wuladdd/open5gs.git && \
 	cd open5gs && \
     if [ "$VERSION" = "dev" ]; then \
       git checkout $BRANCH; \
